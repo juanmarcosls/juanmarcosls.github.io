@@ -16,8 +16,8 @@ body {
   }
   
 .wrapper {
-  width: 2000px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
   background-color: blue;
   color: yellow;
 }
@@ -77,9 +77,9 @@ section [id] {
 
 
 .main {
-  margin: 7px auto;
-  width: 1000px;
-  height: 1000px;
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
@@ -93,6 +93,8 @@ h1 {
 .info-content span {
   color: white;
 }
+
+
 
 .download-cv {
   padding: 10px 20px;
@@ -143,7 +145,7 @@ h1 {
 
 .main img {
   border:  7px solid yellow;
-  width: 500px;
+  width: 350px;
   height: 520px;
   z-index: 1;
 }
@@ -151,7 +153,7 @@ h1 {
 .about {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 2000px;
+  width: 100vw;
   align-items: center;
   background-color: yellow;
 }
@@ -186,13 +188,13 @@ h1 {
 
 .portfolio,
 .contact-section {
-  width: 2000px;
+  width: 100vw;
   background-color: blue;
   color: white;
 }
 
 .portfolio-heading {
-  width: 2000px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,7 +305,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 2000px;
+  width: 100vw;
   height: 200px;
   padding: 2em;
   background-color: yellow;
@@ -331,13 +333,13 @@ h1 {
 
 .portfolio,
 .contact-section {
-  width: 2000px;
+  width: 100vw;
   background-color: blue;
   color: #fff;
 }
 
 .portfolio-heading {
-  width: 2000px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -493,7 +495,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 2000px;
+  width: 100vw;
   height: 200px;
   padding: 2em;
   background-color: yellow;
@@ -519,12 +521,12 @@ h1 {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 480px){
-  body{
+
+@media (max-width: 450px) {
+  html, img, .contact-section, .navbar {
+    font-size: 12px;
     width: auto;
-  }
-  .wrapper, .main, .about, .portfolio, .contact-section, .footer, .card{
-    width: auto;
+    height: auto;
   }
 }
 
