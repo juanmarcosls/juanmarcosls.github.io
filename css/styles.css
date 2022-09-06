@@ -541,11 +541,10 @@ ol li:nth-child(3) a:before {
 }
 
 
-@media (max-width: 450px) {
-  html, img, .contact-section, .navbar {
+@media screen and (max-width: 450px) {
+  html, img, body, footer {
     font-size: 12px;
     width: auto;
-    height: auto;
   }
 }
 
