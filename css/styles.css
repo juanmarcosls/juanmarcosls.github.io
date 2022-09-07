@@ -541,10 +541,118 @@ ol li:nth-child(3) a:before {
 }
 
 
-@media screen and (max-width: 450px) {
-  html, img, body, footer {
-    font-size: 12px;
-    width: auto;
+@media (max-width: 650px){
+  #game-buttons-box{
+      width: 310px;
+  }
+
+  #game-section{
+      display: none;
+      width: 320px;
+      height: 85%;
+  }
+
+  #hanged-box{
+      width: 250px;
+      height: 225px;
+  }
+
+  #final-msg-box{
+      width: cal(250px(175px/2));
+      height: 175px;
+      top: 0px;
+  }
+  .green{
+      font-size: 55px;
+  }
+  .red{
+      font-size: 70px;
+  }
+
+  .keyboard-letter{
+      width: 23px;
+      margin: 3px;
+  }
+
+  .button{
+      margin: 5px 5px;
+  }
+  
+  footer {
+      width: 250px;
   }
 }
 
+@media (max-height: 700px){   
+  header{
+      height: 15%;
+  }
+
+  #logo-box{
+      width: 55px;
+  }
+
+  #dark-mode-box{
+      width: 100px;
+  }
+  
+  main{
+      height: 70%;
+  }
+
+  #game-section{
+      height: 530px;
+  }
+
+  #hanged-box{
+      width: 175px;
+      height: 150px;
+  }
+
+  #hanged-box canvas{
+      width: 100%;
+      height: 100%;
+  }
+
+  #right-words-box{
+      width: 320px;
+      height: 35px;
+  }
+
+  .underscore{
+      width: 20px;
+      height: 30px;
+  }
+
+  .keyboard-letter{
+      width: 23px;
+      margin: 3px;
+  }
+
+  .button{
+      padding: 8px;
+  }
+
+  #final-msg-box{
+      width: cal(250px(175px/2));
+      height: 175px;
+
+      top: -50px;
+  }
+  .green{
+      font-size: 38px;
+  }
+  .red{
+      font-size: 50px;
+  }
+
+  footer{
+      height: 15%;
+      font-size: 14px;
+      float:inherit;
+  }
+
+  footer p {
+      width: 225px;
+  }
+}
